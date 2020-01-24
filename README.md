@@ -1,4 +1,3 @@
-
 # Guia de privacidade do Windows 10 - Atualização 1903
 
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/nutella_1903.jpg)
@@ -496,9 +495,9 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution 
 Pressione ```Win + R```, digite ```regedit```, dê enter e navegue até HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.  
 Aqui, precisaremos encontrar as seguintes chaves:
 
-- DPS
-- WdiServiceHost
-- WdiSystemHost
+* DPS
+* WdiServiceHost
+* WdiSystemHost
   
 Essas chaves tem algumas permissões chatas. Para deletá-las, você deverá seguir o tutorial do GIF:
 
@@ -556,28 +555,28 @@ Alguns deles podem não existir, mas está tudo bem.
 
 É necessário desativar o Windows Spotlight e outras "Sugestões" (são literalmente anúncios).
 
-Vá para Iniciar > Configurações > Personalização > Tela de bloqueio:
-	- Coloque a opção o plano de fundo como Imagem
-	- Coloque a opção "Desativar fatos divertidos, dicas, truques e muito mais na tela de bloqueio" como desativado
+Vá em Iniciar > Configurações > Personalização > Tela de bloqueio:
+* Coloque a opção o plano de fundo como Imagem
+* Coloque a opção "Desativar fatos divertidos, dicas, truques e muito mais na tela de bloqueio" como desativado
 
-Go to Personalização > Iniciar:
-	- Coloque a opção "Mostrar sugestões ocasionalmente em Iniciar" como desativado
+Vá em Personalização > Iniciar:
+* Coloque a opção "Mostrar sugestões ocasionalmente em Iniciar" como desativado
 
 Volte em Configurações e vá para Sistema > Notificações e ações:
-	- Coloque a opção "Obter dicas, truques e sugestões ao usar o Windows" como desativado
-	- Coloque a opção "Mostre-me as boas-vindas do Windows ..." como desativado
+* Coloque a opção "Obter dicas, truques e sugestões ao usar o Windows" como desativado
+* Coloque a opção "Mostre-me as boas-vindas do Windows ..." como desativado
 
-Vá para Sistema > Multitarefa:
-	- Coloque a opção "Mostrar sugestões ocasionalmente na linha do tempo" como desativado
+Vá em Sistema > Multitarefa:
+* Coloque a opção "Mostrar sugestões ocasionalmente na linha do tempo" como desativado
  
-Volte para Configurações e vá em Privacidade:
-	- Em Geral, desative tudo
-	- Em Histórico de atividades, desative tudo
-	- Em Controle por Voz, desative tudo
-	- Em Personalização de escrita a tinta..., desative tudo
-	- Em Diagnósticos e comentários, coloque a opção "Permitir que aplicativos acessem informações de diagnóstico" como desativado
+Volte em Configurações e vá em Privacidade:
+* Em Geral, desative tudo
+* Em Histórico de atividades, desative tudo
+* Em Controle por Voz, desative tudo
+* Em Personalização de escrita a tinta..., desative tudo
+* Em Diagnósticos e comentários, coloque a opção "Permitir que aplicativos acessem informações de diagnóstico" como desativado
 
-Volte para Configurações e vá em Pesquisar:
+Volte em Configurações e vá em Pesquisar:
 * Em Permissões e Histórico, desative tudo
 
 Posteriormente, você poderá receber uma notificação de "Sugestões". Clique com o botão direito do mouse e desligue-o.
