@@ -1,63 +1,81 @@
-# Windows 10 Privacy Guide - 1903 Update
+
+# Guia de privacidade do Windows 10 - Atualização 1903
+
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/nutella_1903.jpg)
 
-## Important: Maintainer needed!
-I am switching to Linux as my main OS and 1903 will be the last update for this guide from me. <a href="https://github.com/adolfintel/Windows10-Privacy/issues/45">Want to pick up the project?</a>
 
-## Introduction
-Windows 10 has raised several concerns about privacy due to the fact that it has a lot of telemetry and online features. In response to these concerns, Microsoft released [a document explaining exactly what data they collect](https://technet.microsoft.com/itpro/windows/configure/windows-diagnostic-data), and now Windows 10 even has a [Diagnostic Data Viewer](https://www.microsoft.com/en-us/store/p/diagnostic-data-viewer/9n8wtrrsq8f7). Most of it seems pretty legit stuff when telemetry is set to basic, but still, if you don't trust them, here's how to prevent Windows 10 from sending your data to Microsoft.  
-Last update: July 5, 2019
+## Introdução
 
-__Important:__ This procedure cannot be reverted without reinstalling Windows. Do not follow this guide if:
-* You are not an experienced user
-* You need to use a Microsoft Account for any reason (outside of your web browser)
-* You need to download anything from the Windows Store (including distros for the Linux subsystem if you want to use it)
-* You need to add/remove user accounts to your PC (new accounts will not work properly)
+O Windows 10 trouxe muitas preocupações sobre privacidade devido ao fato de possuir muitos recursos de telemetria e outras ferramentas online. Em resposta a essas preocupações, a Microsoft lançou [um documento explicando exatamente quais dados eles coletam](https://technet.microsoft.com/itpro/windows/configure/windows-diagnostic-data) e agora o Windows 10 ainda tem um [Diagnostic Data Viewer](https://www.microsoft.com/en-us/store/p/diagnostic-data-viewer/9n8wtrrsq8f7) . Quando a telemetria é definida como básica, essa coletas parecem bem legítimas (para aprimorar o sistema), mas, mesmo assim, se você não confia nelas, veja como impedir o Windows 10 de enviar seus dados à Microsoft.  
+Última atualização: 5 de julho de 2019
 
-You're doing this at your own risk, I am not responsible for any data loss or damage that may occur.
+**Importante:** Este procedimento não pode ser revertido sem reinstalar o Windows. Não siga este guia se:
+-   Você não é um usuário experiente
+-   Você precisa usar uma conta da Microsoft por qualquer motivo (fora do seu navegador)
+-   Você precisa fazer o download de qualquer coisa da Windows Store (incluindo distribuições para um subsistema Linux, se quiser usá-lo)
+-   Você precisa adicionar / remover contas de usuário no seu PC (novas contas não funcionarão corretamente)
 
-Let's start.
+Você está fazendo isso por sua própria conta e risco, não sou responsável por qualquer perdas ou danos de dados que possam ocorrer.
 
-## Do not use the default settings
-At the end of the setup process, create a local account, don't use Cortana and turn off everything in the privacy settings.
+Vamos começar!
+
+## Não use as configurações padrão
+
+No final do processo de configuração, crie uma conta local, não use a Cortana e desative tudo nas configurações de privacidade.
+
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/setup1809_1.jpg)
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/setup1809_2.jpg)
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/setup1809_3.jpg)
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/setup1903_4.jpg)
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/setup1903_5.jpg)
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/setup1809_coll.jpg)
-If you already installed Windows with the default settings, go to Start > Settings > Privacy to turn them off. You should also go to Account and disconnect your Microsoft account because this guide will prevent it from working properly.
 
-## Let it download all the updates
-Once you get to the desktop, go to Settings > Updates and security, and let it download all the updates. Reboot and repeat until no more updates are available.  
-This is important because Windows Update may interfere with our activities.
+Se você já instalou o Windows com as configurações padrão, vá em Iniciar > Configurações > Privacidade para desativá-las. Você também deve acessar Conta e desconectar sua conta da Microsoft, pois impedirá que este guia funcione corretamente.
+
+## Faça o download de todas as atualizações
+
+Depois de chegar à área de trabalho, vá em Configurações > Atualizações e Segurança e baixe todas as atualizações. Reinicie e repita até que não haja mais atualizações disponíveis.  
+Isso é importante porque o Windows Update pode interferir em nossas atividades.
+
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/updates1903_1.jpg)  
-Now open the Store app, and let it download updates too.  
-Again, this is important because updates would interfere with our activities.  
-This may take some time. 
+
+Agora abra o aplicativo da loja e faça o download das atualizações dos aplicativos também. Novamente, isso é importante porque as atualizações interferem em nossas atividades. Isto pode levar algum tempo.
+
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/updates1809_2.jpg)
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/updates1809_3.jpg)  
-Make sure you check for updates several times, because we absolutely don't want it to download stuff while we're removing it.
 
-Now that the system is fully updated, make sure Windows is activated with your license (or KMSPico).
+Verifique se há atualizações várias vezes, porque não queremos que ele baixe coisas enquanto a removemos.
 
-## Remove everything you can
-Open the start menu and remove all the applications. Some of them, such as Microsoft Edge, will not have an uninstall option; we'll remove them later.  
-What's important now is to remove all the OEM software and the shitty games like Candy Crush and Minecraft.
+Agora que o sistema está totalmente atualizado, verifique se o Windows está ativado com sua licença (ou KMSPico). 
 
-If you used previous versions of Windows 10, you'll notice that this time we can remove more stuff, like Paint 3D, without resorting to tricks.
+## Remova tudo que puder
 
-## Tools
-* You will need __Install_Wim_Tweak__. Download [this archive](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/install_wim_tweak.zip), extract it to your Desktop, then move it to C:\Windows\System32
-![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/iwt1809_extr.jpg)  
-This is a very handy tool that allows us to remove Windows components with a single command. You can delete it from System32 when you're finished with this guide.  
-* We need a command prompt, so click start, type ``cmd`` and run it as administrator
+Abra o menu Iniciar e remova todos os aplicativos. Alguns deles, como o Microsoft Edge, não terão uma opção de desinstalação: nós os removeremos mais tarde. 
+
+O importante agora é remover todo o software dos fabricantes e os jogos pré-instalados, como Candy Crush e Minecraft.
+
+Se você usou versões anteriores do Windows 10, notará que desta vez podemos remover mais coisas, como o Paint 3D, sem recorrer a gambiarra.
+
+## Ferramentas
+
+Você precisará do **Install_Wim_Tweak** . Faça o download [deste arquivo](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/install_wim_tweak.zip) , extraia-o para a área de trabalho e mova-o para ```C:\Windows\System32```
+
+![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/iwt1809_extr.jpg)
+
+Essa é uma ferramenta muito útil que nos permite remover os componentes do Windows com um único comando. Você pode excluí-lo do System32 quando terminar este guia.
+
+- Precisamos de um prompt de comando, então clique em Iniciar, digite `cmd`e execute-o como administrador.
+
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/cmd1809_1.jpg)
-* We will also need PowerShell, so click start, type ``PowerShell`` and run it as administrator
+
+- Também precisaremos do PowerShell. Clique em Iniciar, digite `PowerShell`e execute-o como administrador.
+
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/ps1809_1.jpg)
 
-## Removing Windows Defender
-In the command prompt, type the following commands:
+## Removendo o Windows Defender
+
+No prompt de comando, digite os seguintes comandos:
+
 ```
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v SmartScreenEnabled /t REG_SZ /d "Off" /f
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\AppHost" /v "EnableWebContentEvaluation" /t REG_DWORD /d "0" /f
@@ -76,25 +94,30 @@ install_wim_tweak /o /c Windows-Defender /r
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.SecurityAndMaintenance" /v "Enabled" /t REG_DWORD /d 0 /f
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\SecurityHealthService" /f
 ```
-This will take 1-2 minutes.  
-Unfortunately, since June 2018, the Windows Security icon in the Start menu can no longer be removed without breaking the system.
+Isso levará de 1 a 2 minutos.  
+Infelizmente, desde junho de 2018, o ícone Segurança do Windows no menu Iniciar não pode mais ser removido sem danificar o sistema.
 
-If Windows complains about the system being unprotected, right click the notification and hide it.
+Se o Windows avisar que o sistema está desprotegido, clique com o botão direito do mouse na notificação e oculte-a.
+
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/wdend1803_1.jpg)
 
-## Removing features
-We will now remove almost all UWP features in Windows. The only UWP app you'll have left will be the settings app.  
-If you manually install UWP apps later (like cracked UWP games) they may not work properly.
+## Removendo recursos
 
-__Note:__ if some of the apps reappear after a few minutes, it's because you didn't wait for the updates to finish. You can simply remove them again using the same commands.
+Agora vamos remover quase todos os recursos da UWP no Windows. O único aplicativo UWP restante será o aplicativo de configurações. Se você instalar aplicativos UWP manualmente mais tarde (como jogos UWP crackeados), eles poderão não funcionar corretamente.
 
-### Windows Store
-In the PowerShell, type:
+**Nota:** se alguns dos aplicativos reaparecerem após alguns minutos, é porque você não esperou que as atualizações terminassem. Você pode simplesmente removê-los novamente usando os mesmos comandos.
+
+### Loja do Windows
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *store* | Remove-AppxPackage
 ```
-You can ignore any error that pops up.  
-In the command prompt, type:
+
+Você pode ignorar qualquer erro que aparecer.  
+No prompt de comando, digite:
+
 ```
 install_wim_tweak /o /c Microsoft-Windows-ContentDeliveryManager /r
 install_wim_tweak /o /c Microsoft-Windows-Store /r
@@ -106,22 +129,28 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" 
 sc delete PushToInstall
 ```
 
-### Music, TV, ...
-In the PowerShell, type:
+### Música, TV, ...
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *zune* | Remove-AppxPackage
 Get-WindowsPackage -Online | Where PackageName -like *MediaPlayer* | Remove-WindowsPackage -Online -NoRestart
 ```
 
-__Alternatives__: [MPC-HC](https://mpc-hc.org/), [VLC](https://www.videolan.org/vlc/), [MPV](https://mpv.srsfckn.biz/)
+**Programas alternativos**: [MPC-HC](https://mpc-hc.org/) , [VLC](https://www.videolan.org/vlc/) , [MPV](https://mpv.srsfckn.biz/)
 
-### Xbox and Game DVR
-In the PowerShell, type:
+### Xbox e DVR
+
+No PowerShell, digite:
 ```
 Get-AppxPackage -AllUsers *xbox* | Remove-AppxPackage
 ```
-You can ignore any error that pops up.  
-In the command prompt, type:
+
+Você pode ignorar qualquer erro que aparecer.
+
+No prompt de comando, digite:
+
 ```
 sc delete XblAuthManager
 sc delete XblGameSave
@@ -132,21 +161,29 @@ schtasks /Change /TN "Microsoft\XblGameSave\XblGameSaveTask" /disable
 schtasks /Change /TN "Microsoft\XblGameSave\XblGameSaveTaskLogon" /disable
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\GameDVR" /v AllowGameDVR /t REG_DWORD /d 0 /f
 ```
-Additionally, go to Start > Settings > Gaming and turn off everything.
 
-### Sticky Notes
-In the PowerShell, type:
+Além disso, vá para Iniciar > Configurações > Jogos e desative tudo.
+
+### Notas adesivas
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *sticky* | Remove-AppxPackage
 ```
-__Alternatives__: [Notebot](http://notebot.fdossena.com/)
 
-### Maps
-In the PowerShell, type:
+**Programas alternativos**: [Notebot](http://notebot.fdossena.com/)
+
+### Mapas
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *maps* | Remove-AppxPackage
 ```
-In the command prompt, type:
+
+No prompt de comando, digite:
+
 ```
 sc delete MapsBroker
 sc delete lfsvc
@@ -154,70 +191,92 @@ schtasks /Change /TN "\Microsoft\Windows\Maps\MapsUpdateTask" /disable
 schtasks /Change /TN "\Microsoft\Windows\Maps\MapsToastTask" /disable
 ```
 
-### Alarms and Clock
-In the PowerShell, type:
+### Alarmes e Relógio
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *alarms* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *people* | Remove-AppxPackage
 ```
-You can ignore any error that pops up.
 
-### Mail, Calendar, ...
-In the PowerShell, type:
+Você pode ignorar qualquer erro que aparecer.
+
+### Email, Calendário, ...
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *comm* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *mess* | Remove-AppxPackage
 ```
-You can ignore any error that pops up.
+Você pode ignorar qualquer erro que aparecer.
 
-__Alternatives__: [Thunderbird](https://www.mozilla.org/thunderbird/)
+**Programas alternativos**: [Thunderbird](https://www.mozilla.org/thunderbird/)
 
 ### OneNote
-In the PowerShell, type:
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *onenote* | Remove-AppxPackage
 ```
 
-### Photos
-In the PowerShell, type:
+### Fotos
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *photo* | Remove-AppxPackage
 ```
-__Alternatives__: [JPEGView](https://sourceforge.net/projects/jpegview/), or the old Windows Photo Viewer
 
-### Camera
-In the PowerShell, type:
+**Programas alternativos**: [JPEGView](https://sourceforge.net/projects/jpegview/), or the old Windows Photo Viewer
+
+### Câmera
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *camera* | Remove-AppxPackage
 ```
-Ignore any error that pops up
 
-### Weather, News, ...
-In the PowerShell, type:
+Você pode ignorar qualquer erro que aparecer.
+
+### Clima, Notícias, ...
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *bing* | Remove-AppxPackage
 ```
 
-### Calculator
-In the PowerShell, type:
+### Calculadora
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *calc* | Remove-AppxPackage
 ```
-__Alternatives__: [SpeedCrunch](http://www.speedcrunch.org/)
+**Programas alternativos**: [SpeedCrunch](http://www.speedcrunch.org/)
 
-### Sound Recorder
-In the PowerShell, type:
+### Gravador de Som
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *soundrec* | Remove-AppxPackage
 ```
-__Alternatives__: [Audacity](http://www.audacityteam.org/)
+
+**Programas alternativos**: [Audacity](http://www.audacityteam.org/)
 
 ### Microsoft Edge
-Since May 2019, Edge can no longer be fully removed without breaking Windows Update. We can neutralize it, but the icon will still be there in the start menu.
 
-Right click the Edge icon on your taskbar and unpin it.
+Desde maio de 2019, o Edge não pode mais ser totalmente removido sem danificar o Windows Update. Podemos neutralizá-lo, mas o ícone ainda estará lá no menu Iniciar.
 
-In the PowerShell, type:
+Clique com o botão direito do mouse no ícone Edge na barra de tarefas e o desafixe.
+
+No PowerShell, digite:
+
 ```
 taskkill /F /IM browser_broker.exe
 taskkill /F /IM RuntimeBroker.exe
@@ -228,57 +287,76 @@ mv C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe C:\Windows\System
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MicrosoftEdge.exe" /v Debugger /t REG_SZ /d "%windir%\System32\taskkill.exe" /f
 Get-WindowsPackage -Online | Where PackageName -like *InternetExplorer* | Remove-WindowsPackage -Online -NoRestart
 ```  
-__Alternatives__: [Firefox](http://www.firefox.com/"), [Chromium](http://chromium.woolyss.com/), [Iridium Browser](https://iridiumbrowser.de), [Pale Moon](https://www.palemoon.org/)
 
-### Contact Support, Get Help
-In the command prompt, type:
+**Programas alternativos**:[Firefox](http://www.firefox.com/"), [Chromium](http://chromium.woolyss.com/), [Iridium Browser](https://iridiumbrowser.de), [Pale Moon](https://www.palemoon.org/)
+
+### Suporte, Ajuda
+
+No prompt de comando, digite:
+
 ```
 install_wim_tweak /o /c Microsoft-Windows-ContactSupport /r
 ```
-In the PowerShell, type:
+
+No PowerShell, digite:
+
 ```
 Get-AppxPackage -AllUsers *GetHelp* | Remove-AppxPackage
 ```
-Additionally, Go to Start > Settings > Apps > Manage optional features, and remove Contact Support (if present).
+
+Além disso, vá em Iniciar > Configurações > Aplicativos > Gerenciar recursos opcionais e remova o Suporte ao contato (se houver).
 
 ### Microsoft Quick Assist
-In the PowerShell, type:
+
+No PowerShell, digite:
+
 ```
 Get-WindowsPackage -Online | Where PackageName -like *QuickAssist* | Remove-WindowsPackage -Online -NoRestart
 ```
 
 ### Connect
-In the command prompt, type:
+
+No prompt de comando, digite:
+
 ```
 install_wim_tweak /o /c Microsoft-PPIProjection-Package /r
 ```
 
-### Your Phone
-In the PowerShell, type:
+### Telefone
+
+No prompt de comando, digite:
+
 ```
 Get-AppxPackage -AllUsers *phone* | Remove-AppxPackage
 ```
 
 ### Hello Face
-In the PowerShell, type:
+
+No PowerShell, digite:
+
 ```
 Get-WindowsPackage -Online | Where PackageName -like *Hello-Face* | Remove-WindowsPackage -Online -NoRestart
 ```
 
-In the command prompt, type:
+No prompt de comando, digite:
+
 ```
 schtasks /Change /TN "\Microsoft\Windows\HelloFace\FODCleanupTask" /Disable
 ```
 
-### Edit with 3D Paint / 3D Print
-It is now possible to remove 3D Paint and 3D Print, but they forgot to remove the option in the context menu when you remove them. To remove it, run this in the command prompt:
+### Editar com 3D Paint / 3D Print
+
+Agora é possível remover o 3D Paint e o 3D Print, mas eles esqueceram de remover a opção no menu de contexto quando você os remove. Para removê-lo, execute isso no prompt de comando:
+
 ```
 for /f "tokens=1* delims=" %I in (' reg query "HKEY_CLASSES_ROOT\SystemFileAssociations" /s /k /f "3D Edit" ^| find /i "3D Edit" ') do (reg delete "%I" /f )
 for /f "tokens=1* delims=" %I in (' reg query "HKEY_CLASSES_ROOT\SystemFileAssociations" /s /k /f "3D Print" ^| find /i "3D Print" ') do (reg delete "%I" /f )
 ```
 
-### System Restore
-In the PowerShell, type:
+### Restauração do sistema
+
+No PowerShell, digite:
+
 ```
 Disable-ComputerRestore -Drive "C:\"
 vssadmin delete shadows /all /Quiet
@@ -289,34 +367,47 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore" /v "Di
 schtasks /Change /TN "\Microsoft\Windows\SystemRestore\SR" /disable
 ```
 
-### Reboot!
-Reboot the system and you're now free of UWP garbage.
+### Reinicie!
 
-## Disabling Cortana
-With the Anniversary Update, Microsoft hid the option to disable Cortana.  
-__Warning__: Do not attempt to remove the Cortana package using install_wim_tweak or the PowerShell, as it will break Windows Search and you will have to reinstall Windows!
+Reinicie o sistema, e você está livre dos bloatwares.
 
-Open our command prompt again and use this command:
+## Desabilitando a Cortana
+
+Com a atualização de aniversário, a Microsoft ocultou a opção de desativar a Cortana.
+
+**Aviso**: Não tente remover o pacote da Cortana usando o ´´´install_wim_tweak´´´ ou o PowerShell, pois isso danificará a Pesquisa do Windows e você precisará reinstalar o sistema novamente!
+
+Abra seu prompt de comando novamente e use este comando:
+
 ```
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /v AllowCortana /t REG_DWORD /d 0 /f
 reg add "HKLM\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules"  /v "{2765E0F4-2918-4A46-B9C9-43CDD8FCBA2B}" /t REG_SZ /d  "BlockCortana|Action=Block|Active=TRUE|Dir=Out|App=C:\windows\systemapps\microsoft.windows.cortana_cw5n1h2txyewy\searchui.exe|Name=Search  and Cortana  application|AppPkgId=S-1-15-2-1861897761-1695161497-2927542615-642690995-327840285-2659745135-2630312742|" /f
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /v BingSearchEnabled /t REG_DWORD /d 0 /f
 ```
-Reboot again and Cortana is gone. The icon is still there, but it will open the regular search instead.
 
-## More tweaking
-Open the command prompt again.
-### Turn off Windows Error reporting
-In the command prompt, type:
+Reinicie e a Cortana vai ser desabilitada. O ícone ainda estará lá, mas vai apenas para a pesquisa normal do Windows.
+
+## Mais ajustes
+
+Abra o prompt de comando novamente.
+
+### Desativar o relatório de erros do Windows
+
+No prompt de comando, digite:
+
 ```
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" /v Disabled /t REG_DWORD /d 1 /f
 reg add "HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting" /v Disabled /t REG_DWORD /d 1 /f
 ```
-We will remove the service later, but in case an update reinstalls it, this will at least keep it turned off.
 
-### No more forced updates
-This will notify when updates are available, and you decide when to install them.  
-In the command prompt, type:
+Removeremos o serviço mais tarde, mas, se uma atualização o reinstalar, isso manterá o pelo menos desativado.
+
+### Sem atualizações forçadas
+
+Isso notificará quando houver atualizações disponíveis e você decide quando instalá-las.  
+
+No prompt de comando, digite:
+
 ```
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v NoAutoUpdate /t REG_DWORD /d 0 /f
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v AUOptions /t REG_DWORD /d 2 /f
@@ -324,23 +415,31 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v Scheduled
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v ScheduledInstallTime /t REG_DWORD /d 3 /f
 ```
 
-### No license checking
-By default, Windows will check your license every time you turn on your PC, this will prevent it.  
-In the command prompt, type:
+### Desabilitando a verificação de licença
+
+Por padrão, o Windows verifica sua licença toda vez que você liga o computador. O comando abaixo evita isso.
+
+No prompt de comando, digite:
+
 ```
 reg add "HKLM\Software\Policies\Microsoft\Windows NT\CurrentVersion\Software Protection Platform" /v NoGenTicket /t REG_DWORD /d 1 /f
 ```
 
-### Disable sync
-It doesn't really affect you if you're not using a Microsoft Account, but it will at least disable the Sync settings from the Settings app.  
-In the command prompt, type:
+### Desabilitando a sincronização
+
+Isso realmente não afeta você se você não estiver usando uma Conta da Microsoft, mas pelo menos desabilitará as configurações de Sincronização nas Configurações.
+
+No prompt de comando, digite:
+
 ```
 reg add "HKLM\Software\Policies\Microsoft\Windows\SettingSync" /v DisableSettingSync /t REG_DWORD /d 2 /f
 reg add "HKLM\Software\Policies\Microsoft\Windows\SettingSync" /v DisableSettingSyncUserOverride /t REG_DWORD /d 1 /f
 ```
 
-### No Windows Tips
-In the command prompt, type:
+### Desabilitando as Dicas do Windows
+
+No prompt de comando, digite:
+
 ```
 reg add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /v DisableSoftLanding /t REG_DWORD /d 1 /f
 reg add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /v DisableWindowsSpotlightFeatures /t REG_DWORD /d 1 /f
@@ -349,8 +448,10 @@ reg add "HKLM\Software\Policies\Microsoft\Windows\DataCollection" /v DoNotShowFe
 reg add "HKLM\Software\Policies\Microsoft\WindowsInkWorkspace" /v AllowSuggestedAppsInWindowsInkWorkspace /t REG_DWORD /d 0 /f
 ```
 
-## Removing Telemetry and other unnecessary services
-In the command prompt type the following commands:
+## Removendo a telemetria e outros serviços desnecessários
+
+No prompt de comando, digite os seguintes comandos:
+
 ```
 sc delete DiagTrack
 sc delete dmwappushservice
@@ -392,19 +493,23 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution 
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\DeviceCensus.exe" /v Debugger /t REG_SZ /d "%windir%\System32\taskkill.exe" /f
 ```
 
-Press Win+R, type regedit, press enter, and navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.  
-Here we need to locate the following keys:
-* DPS
-* WdiServiceHost
-* WdiSystemHost
-  
-These keys have messed up permissions. To delete them, we must fix them, here's a video showing how to do it:  
-![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/delkey.gif)  
-Right click the key and select Permissions, then click Advanced, change the Owner to your username, check "Replace owner on subcontainers and objects" and "Replace all child object permission entries with inheritable permission entries from this object", if inheritance is enabled, disable it and convert to explicit permissions, apply, remove all the permission entries and add one for your username with Full control, confirm everything and delete the key.  
-Repeat for the 3 keys and you're done.
+Pressione ```Win + R```, digite ```regedit```, dê enter e navegue até HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.  
+Aqui, precisaremos encontrar as seguintes chaves:
 
-### Scheduled tasks
-Windows 10 has a huge amount of scheduled tasks that may report some data. Type these commands in the command prompt to remove them:
+- DPS
+- WdiServiceHost
+- WdiSystemHost
+  
+Essas chaves tem algumas permissões chatas. Para deletá-las, você deverá seguir o tutorial do GIF:
+
+![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/delkey.gif)
+
+Clique com o botão direito do mouse na chave e selecione Permissões, depois clique em Avançado, altere o Proprietário para o seu nome de usuário, e marque "Substituir proprietário em subcontêineres e objetos" e "Substituir tudo entradas de permissão de objeto filho com entradas de permissão herdáveis ​​deste objeto ", e se a herança estiver ativada, desative-a e converta-a em permissões explícitas, clique em aplicar, remova todas as entradas de permissão e adicione uma para o seu nome de usuário com Controle total, confirme tudo e exclua a chave. Repita o procedimento para as 3 chaves e você terá concluído.
+
+### Tarefas agendadas
+
+O Windows 10 possui uma enorme quantidade de tarefas agendadas que podem enviar alguns dados. Digite estes comandos no prompt de comando para removê-los:
+
 ```
 schtasks /Change /TN "Microsoft\Windows\AppID\SmartScreenSpecific" /disable
 schtasks /Change /TN "Microsoft\Windows\Application Experience\AitAgent" /disable
@@ -445,58 +550,46 @@ schtasks /Change /TN "\Microsoft\Windows\Diagnosis\Scheduled" /disable
 schtasks /Change /TN "\Microsoft\Windows\NetTrace\GatherNetworkInfo" /disable
 del /F /Q "C:\Windows\System32\Tasks\Microsoft\Windows\SettingSync\*" 
 ```
-Some of these may not exist, it's fine.
+Alguns deles podem não existir, mas está tudo bem.
 
-## Last touches
-We must disable Windows Spotlight, and other "Suggestions" (literal ads).
+## Toques finais
 
-Go to Start > Settings > Personalization > Lock screen: 
-* Set the background to Picture
-* Set "Get fun facts, tips, tricks and more on your lock screen" to off
+É necessário desativar o Windows Spotlight e outras "Sugestões" (são literalmente anúncios).
 
-Go to Personalization > Start:
-* Set Show suggestions occasionally in Start to off (They're literally ads)
+Vá para Iniciar > Configurações > Personalização > Tela de bloqueio:
+	- Coloque a opção o plano de fundo como Imagem
+	- Coloque a opção "Desativar fatos divertidos, dicas, truques e muito mais na tela de bloqueio" como desativado
 
-Go back to Settings and go to System > Notifications and actions:
-* Set "Get tips, tricks, and suggestions as you use Windows" to off
-* Set "Show me the Windows welcome..." to off
+Go to Personalização > Iniciar:
+	- Coloque a opção "Mostrar sugestões ocasionalmente em Iniciar" como desativado
 
-Go to System > Multitasking:
-* Set "Show suggestions occasionally in your timeline" to off
+Volte em Configurações e vá para Sistema > Notificações e ações:
+	- Coloque a opção "Obter dicas, truques e sugestões ao usar o Windows" como desativado
+	- Coloque a opção "Mostre-me as boas-vindas do Windows ..." como desativado
+
+Vá para Sistema > Multitarefa:
+	- Coloque a opção "Mostrar sugestões ocasionalmente na linha do tempo" como desativado
  
-Go back to Settings and go to Privacy:
-* Under General, turn off everything
-* Under Activity history, turn off everything
-* Under Speech, turn off everything
-* Under Inking, turn off everything
-* Under App diagnostics, set Let apps access diagnostic information to off
+Volte para Configurações e vá em Privacidade:
+	- Em Geral, desative tudo
+	- Em Histórico de atividades, desative tudo
+	- Em Controle por Voz, desative tudo
+	- Em Personalização de escrita a tinta..., desative tudo
+	- Em Diagnósticos e comentários, coloque a opção "Permitir que aplicativos acessem informações de diagnóstico" como desativado
 
-Go back to Settings and go to Search:
-* Under Permissions & History, turn off everything
+Volte para Configurações e vá em Pesquisar:
+* Em Permissões e Histórico, desative tudo
 
-Later on, you might get a "Suggestions" notification. Right click it and turn it off.
+Posteriormente, você poderá receber uma notificação de "Sugestões". Clique com o botão direito do mouse e desligue-o.
 
-## Use a firewall!
-For some applications (such as the settings app), the only way to prevent them from reporting data is to block them with a firewall. This is why you should use a firewall to block all traffic except the applications you explicitly allow, like your web browser.
-Personally, I allow Windows Update, Network discovery and sharing, DHCP, DNS, my web browser and nothing more.
+## Parabéns! Sua cópia do Windows agora está livre de bloatware!
 
-[SimpleWall](https://www.henrypp.org/product/simplewall) is the new recommended firewall for this guide. If you used TinyWall before, it no longer works on 1903, so uninstall it.  
-SimpleWall can block/unblock individual executables, UWP apps, and services, as well as filter by address, port and protocol.  
-Unlike TinyWall unfortunately, it doesn't have an autolearn mode, but it has a very useful notification that pops up when an application is blocked, so you can decide if you want to block it or allow it permanently. This is very useful when installing new software. Get used to seeing a lot of these in the first hours.  
-My recommended configuration for SimpleWall is this:
-* Under Settings > Mode, use Whitelist. This will block all traffic that you don't explicitly allow
-* Under Settings > Settings > General, enable "Load on system startup", "Start minimized", and "Skip User Account Control prompt"
-* Under Settings > Settings > Rules, select "Enable boot-time filters"
-* Under Settings > Settings > Rules > System Rules, allow smb (inbound and outbound), if you plan to use network file sharing, and also Windows Update
-* Under File > Import, you can load my preset: [download](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/simplewall_config.zip). It blocks some Windows features that aren't already blocked by the guide, and allows all apps to access the local network but not the Internet.
-* Click on Enable filtering, then select Whitelist
+As coisas poderão no futuro, e farei o possível para manter este guia atualizado. Desde maio de 2018, este guia funciona no Windows 10 Pro.
 
-Feel free to experiment with SimpleWall, it is a very powerful tool.  
-The only disadvantage at the moment is that it blocks Windows Update even if you explicitly allow it. The developer is aware of this issue and it will probably be fixed in later releases. A temporary workaround is available [here](https://github.com/henrypp/simplewall/issues/206#issuecomment-439830634).
+## O Windows pode reverter essas alterações?
 
-## Congratulations! Your copy of Windows is now Debotnetted!
-Things will change in the future, and I'll do what I can to keep this guide updated.
-As of May 2018, this guide works on Windows 10 Pro.
+Quando uma grande atualização é instalada, quase todas as alterações serão revertidas e você terá que repetir este procedimento. Grandes atualizações são lançadas cerca de duas vezes por ano.
 
-## Can Windows revert these changes?
-When a major update is installed, almost all changes will be reverted and you'll have to repeat this procedure. Major updates come out about twice a year.
+## Tradução e adaptação:
+
+[Pedro Lemos](https://github.com/pedrolemoz)
