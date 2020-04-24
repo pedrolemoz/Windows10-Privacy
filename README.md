@@ -57,7 +57,7 @@ Se você usou versões anteriores do Windows 10, notará que desta vez podemos r
 
 ## Ferramentas
 
-Você precisará do **Install_Wim_Tweak** . Faça o download [deste arquivo](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/install_wim_tweak.zip) , extraia-o para a área de trabalho e mova-o para ```C:\Windows\System32```
+Você precisará do **Install_Wim_Tweak**. Faça o download [deste arquivo](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/install_wim_tweak.zip) , extraia-o para a área de trabalho e mova-o para ```C:\Windows\System32```
 
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/iwt1809_extr.jpg)
 
@@ -374,7 +374,7 @@ Reinicie o sistema, e você está livre dos bloatwares.
 
 Com a atualização de aniversário, a Microsoft ocultou a opção de desativar a Cortana.
 
-**Aviso**: Não tente remover o pacote da Cortana usando o ´´´install_wim_tweak´´´ ou o PowerShell, pois isso danificará a Pesquisa do Windows e você precisará reinstalar o sistema novamente!
+**Aviso**: Não tente remover o pacote da Cortana usando o ```install_wim_tweak``` ou o PowerShell, pois isso danificará a Pesquisa do Windows e você precisará reinstalar o sistema novamente!
 
 Abra seu prompt de comando novamente e use este comando:
 
